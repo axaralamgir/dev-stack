@@ -42,7 +42,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Auth */}
+          {/* Sign In/Sign Up */}
           <div className="flex items-center gap-6">
             <a
               href="#"
@@ -87,7 +87,7 @@ export default function Navbar() {
             </span>
           </a>
 
-          {/* Right - Auth */}
+          {/* Right - Sign In/Sign Up */}
           <div className="flex items-center gap-2">
             <a
               href="#"
