@@ -2,12 +2,16 @@ export default function StackSidebar({ stack, onRemove, onRemoveAll }) {
   return (
     <div className="h-fit rounded-2xl border border-slate-200 p-6 lg:sticky lg:top-6">
       <h3 className="text-base font-bold text-slate-900">Your Stack</h3>
-      <p className="mt-1 text-xs text-slate-400">Technology Selected</p>
+      <p className="mt-1 text-xs text-slate-400">
+        {stack.length === 0
+          ? "No technology selected yet"
+          : `${stack.length} technology${stack.length !== 1 ? "s" : ""} selected`}
+      </p>
 
       <div className="mt-4 flex flex-col gap-3">
         {stack.length === 0 ? (
           <p className="rounded-lg bg-slate-50 px-3 py-6 text-center text-xs text-slate-400">
-            No technologies selected yet. Add some from the list.
+            Your stack is empty
           </p>
         ) : (
           stack.map((tech) => (
