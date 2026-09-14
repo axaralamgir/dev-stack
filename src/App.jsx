@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
+import Footer from "./components/Footer";
 
 function App() {
   const [stack, setStack] = useState([]);
@@ -28,6 +29,7 @@ function App() {
         onRemove={handleRemove}
         onRemoveAll={handleRemoveAll}
       />
+      <Footer />
     </div>
   );
 }
